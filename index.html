@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Inventory Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Product Inventory Manager</h1>
+
+    <section>
+      <h2>Add Product</h2>
+      <form id="product-form">
+        <input type="text" id="name" placeholder="Product name" required />
+        <input type="number" id="price" placeholder="Price" min="0" step="0.01" required />
+        <input type="text" id="tags" placeholder="Tags (comma separated)" />
+        <label><input type="checkbox" id="inStock" checked /> In Stock</label>
+        <button type="submit">Add Product</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Controls</h2>
+      <input type="number" id="discount" placeholder="Discount %" min="0" max="100" />
+      <button id="apply-discount">Apply Discount</button>
+      <button id="clear-discount">Clear Discount</button>
+      <button id="toggle-filter">Show Only In-Stock</button>
+    </section>
+
+    <p id="summary"></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th id="discount-header" style="display:none">Discounted Price</th>
+          <th>Status</th>
+          <th>Tags</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="product-body"></tbody>
+    </table>
+  </div>
+  <script type="module" src="dist/app.js"></script>
+</body>
+</html>

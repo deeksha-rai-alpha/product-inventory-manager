@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; }
+.container { max-width: 950px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 8px; }
+h1 { text-align: center; }
+section { margin-bottom: 20px; }
+input[type="text"], input[type="number"] { padding: 8px; margin: 4px; }
+button { padding: 8px 12px; margin: 4px; cursor: pointer; border: none; background: #2563eb; color: #fff; border-radius: 4px; }
+button[data-action="delete"] { background: #dc2626; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background: #e5e7eb; }

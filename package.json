@@ -1,0 +1,10 @@
+{
+  "name": "product-inventory-manager",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
